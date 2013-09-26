@@ -15,7 +15,7 @@ namespace _3DGame.Loaders
                 using (var streamReader = new StreamReader(fileName))
                 {
                     Load(mesh, streamReader);
-                    load_textures(mesh, fileName);
+                    LoadTextures(mesh, fileName);
                     streamReader.Close();
                     return true;
                 }
@@ -32,9 +32,6 @@ namespace _3DGame.Loaders
         static List<ObjMesh.ObjVertex> _objVertices;
         static List<ObjMesh.ObjTriangle> _objTriangles;
         static List<ObjMesh.ObjQuad> _objQuads;
-        static List<Vector3> _tangents;
-        static List<Vector3> _bitangents;
-        static bool _init;
 
         static void Load(ObjMesh mesh, TextReader textReader)
         {
@@ -45,9 +42,6 @@ namespace _3DGame.Loaders
             _objTriangles = new List<ObjMesh.ObjTriangle>();
             _objVerticesIndexDictionary = new Dictionary<ObjMesh.ObjVertex, int>();
             _objQuads = new List<ObjMesh.ObjQuad>();
-            _tangents = new List<Vector3>();
-            _bitangents = new List<Vector3>();
-            _init = true;
 
             string line;
             while ((line = textReader.ReadLine()) != null)
@@ -125,8 +119,6 @@ namespace _3DGame.Loaders
             _objVertices = null;
             _objTriangles = null;
             _objQuads = null;
-            _tangents = null;
-            _bitangents = null;
         }
 
         static void IndexTangentsFix()
@@ -252,7 +244,7 @@ namespace _3DGame.Loaders
             return AddObjVertex(ref vertex, ref texCoord, ref normal);
         }
 
-        static void load_textures(ObjMesh mesh, string filename)
+        static void LoadTextures(ObjMesh mesh, string filename)
         {
             string texdir = Path.GetFileNameWithoutExtension(filename);
             string fulldir = @"Textures/"+texdir+@"/";
