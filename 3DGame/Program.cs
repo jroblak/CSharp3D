@@ -62,8 +62,8 @@ namespace _3DGame
             GL.BindVertexArray(_vao);
 
             PgmID = GL.CreateProgram();
-            load_shader("Shaders/vs.glsl", ShaderType.VertexShader, PgmID, out _vsID);
-            load_shader("Shaders/fs.glsl", ShaderType.FragmentShader, PgmID, out _fsID);
+            LoadShader("Shaders/vs.glsl", ShaderType.VertexShader, PgmID, out _vsID);
+            LoadShader("Shaders/fs.glsl", ShaderType.FragmentShader, PgmID, out _fsID);
             GL.LinkProgram(PgmID);
             Console.WriteLine(GL.GetProgramInfoLog(PgmID));
 
@@ -138,7 +138,7 @@ namespace _3DGame
 
         #region load
 
-        private void load_shader(String filename, ShaderType type, int program, out int address)
+        private static void LoadShader(String filename, ShaderType type, int program, out int address)
         {
             address = GL.CreateShader(type);
 

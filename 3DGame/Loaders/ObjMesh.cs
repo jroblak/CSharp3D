@@ -86,9 +86,9 @@ namespace _3DGame.Loaders
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.EnableClientState(ArrayCap.VertexArray);
 
-            Matrix4 model = Matrix4.Identity;
+            var model = Matrix4.Identity;
             var m3X3 = new Matrix3(model);
-            Matrix4 mvp = model*translation*Game.View*Game.Projection;
+            var mvp = model*translation*Game.View*Game.Projection;
 
             GL.UniformMatrix4(_matrixID, 1, false, ref mvp.Row0.X);
             GL.UniformMatrix4(_mMatrixID, 1, false, ref model.Row0.X);

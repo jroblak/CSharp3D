@@ -105,8 +105,8 @@ namespace _3DGame.Loaders
                 }
             }
 
-            FillTangentData();
-            IndexTangentsFix();
+            FillTangentData(); // Fill the triangles with tangents / bitangents
+            IndexTangentsFix(); // Attempt to average the tangents / bitangents
             
             mesh.Vertices = _objVertices.ToArray();
             mesh.Triangles = _objTriangles.ToArray();
@@ -123,13 +123,20 @@ namespace _3DGame.Loaders
 
         static void IndexTangentsFix()
         {
+            // Loop through every Triangle
             foreach (ObjMesh.ObjTriangle triangle in _objTriangles)
             {
                 int index0, index1, index2;
 
+                // Get the three vertices for the Triangle
                 var vert0 = _objVertices[triangle.Index0];
                 var vert1 = _objVertices[triangle.Index1];
                 var vert2 = _objVertices[triangle.Index2];
+
+                /* The logic here:
+                 * If the vertex exists in the _objVerticesIndexDictionary, then the vertex is shared.
+                 * Therefore, we get that shared vertex and average the tangents / bitangents 
+                */
 
                 if (_objVerticesIndexDictionary.TryGetValue(vert0, out index0))
                 {
@@ -177,7 +184,7 @@ namespace _3DGame.Loaders
 
         static void FillTangentData()
         {
-
+            // Loop through the triangles and calculate the tangents and bitangents
             foreach (ObjMesh.ObjTriangle triangle in _objTriangles) {
 
                 ObjMesh.ObjVertex vert0 = _objVertices[triangle.Index0];
