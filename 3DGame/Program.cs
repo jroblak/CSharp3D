@@ -113,7 +113,7 @@ namespace _3DGame
             int i = 0;
             foreach (ObjMesh mesh in _meshes)
             {
-                var translation = Matrix4.CreateTranslation(i, i, i);
+                var translation = Matrix4.CreateTranslation(i, i * 4, i);
                 mesh.Render(translation);
                 i++;
             }

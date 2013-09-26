@@ -9,6 +9,5 @@ C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\obj\x86\Debu
 C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\diffuse.dds
 C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\specular.dds
 C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\TargaImage.xml
-C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\suzanna\diffuse.dds
 C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Meshes\cylinder.obj
 C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\normal.dds

@@ -114,38 +114,35 @@ namespace _3DGame.Loaders
             GL.BindBuffer(BufferTarget.ArrayBuffer, _verticesBufferId);
 
             GL.EnableVertexAttribArray(0);
+            GL.EnableVertexAttribArray(1);
+            GL.EnableVertexAttribArray(2);
+            GL.EnableVertexAttribArray(3);
+            GL.EnableVertexAttribArray(4);
+
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 14*sizeof (float),
                 (IntPtr) (5*sizeof (float)));
-
-            GL.EnableVertexAttribArray(1);
             GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 14*sizeof (float), (IntPtr) (0));
-
-            GL.EnableVertexAttribArray(2);
             GL.VertexAttribPointer(2, 3, VertexAttribPointerType.Float, false, 14*sizeof (float),
                 (IntPtr) (2*sizeof (float)));
-
-            GL.EnableVertexAttribArray(3);
             GL.VertexAttribPointer(3, 3, VertexAttribPointerType.Float, false, 14*sizeof (float),
                 (IntPtr) (8*sizeof (float)));
-
-            GL.EnableVertexAttribArray(4);
             GL.VertexAttribPointer(4, 3, VertexAttribPointerType.Float, false, 14*sizeof (float),
                 (IntPtr) (11*sizeof (float)));
 
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, _trianglesBufferId);
             GL.DrawElements(BeginMode.Triangles, _triangles.Length*3, DrawElementsType.UnsignedInt, IntPtr.Zero);
 
-            GL.DisableVertexAttribArray(0);
-            GL.DisableVertexAttribArray(1);
-            GL.DisableVertexAttribArray(2);
-            GL.DisableVertexAttribArray(3);
-            GL.DisableVertexAttribArray(4);
-
             if (_quads.Length > 0)
             {
                 GL.BindBuffer(BufferTarget.ElementArrayBuffer, _quadsBufferId);
                 GL.DrawElements(BeginMode.Quads, _quads.Length*4, DrawElementsType.UnsignedInt, IntPtr.Zero);
             }
+
+            GL.DisableVertexAttribArray(0);
+            GL.DisableVertexAttribArray(1);
+            GL.DisableVertexAttribArray(2);
+            GL.DisableVertexAttribArray(3);
+            GL.DisableVertexAttribArray(4);
 
             GL.DisableClientState(ArrayCap.VertexArray);
         }

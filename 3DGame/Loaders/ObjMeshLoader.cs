@@ -105,8 +105,8 @@ namespace _3DGame.Loaders
                 }
             }
 
-            FillTangentData(); // Fill the triangles with tangents / bitangents
-            IndexTangentsFix(); // Attempt to average the tangents / bitangents
+            // FillTangentData(); // Fill the triangles with tangents / bitangents
+            // IndexTangentsFix(); // Attempt to average the tangents / bitangents
             
             mesh.Vertices = _objVertices.ToArray();
             mesh.Triangles = _objTriangles.ToArray();
