@@ -1,0 +1,14 @@
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\3DGame.exe
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\3DGame.pdb
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\OpenTK.dll
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\obj\x86\Debug\3DGame.exe
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\obj\x86\Debug\3DGame.pdb
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Shaders\fs.glsl
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Shaders\vs.glsl
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\obj\x86\Debug\3DGame.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\diffuse.dds
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\specular.dds
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\TargaImage.xml
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\suzanna\diffuse.dds
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Meshes\cylinder.obj
+C:\Users\Justin\Documents\Visual Studio 2010\Projects\3DGame\3DGame\bin\Debug\Textures\cylinder\normal.dds

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>OpenTK</id>
+    <version>1.1.1160.61462</version>
+    <authors>OpenTK Team</authors>
+    <owners>OpenTK Team</owners>
+    <licenseUrl>http://www.opentk.com/project/license</licenseUrl>
+    <projectUrl>http://connect.creativelabs.com/openal/default.aspx</projectUrl>
+    <iconUrl>http://benjaminnitschke.com/OpenTK128x128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Open Toolkit Library (OpenTK)</description>
+    <releaseNotes>Provides the OpenTK library for windows. Newest build 2013-03-07 based on https://github.com/andykorth/opentk If you need OpenAL functionality working out of the box checkout the OpenTKWithOpenAL package!</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>OpenTK OpenAL OpenGL OpenCL</tags>
+  </metadata>
+</package>
